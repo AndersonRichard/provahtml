@@ -10,7 +10,10 @@ function addTarefa() {
         tarefaEditando = null; 
     } else {
         let novoElemento = document.createElement("li");
-        novoElemento.innerHTML = `<p>${texto}</p>`;
+        novoElemento.innerHTML = `<p>${texto}</p> 
+                                    <button onclick='excluirTarefa(this)'><i class="bi bi-trash-fill apagar" id="lixo" onclick="excluirTarefa()"></i></button>
+                                    <button onclick='editarTarefa(this)'><i class="bi bi-pencil-square editar"></i></button>
+                                    <button onclick='concluirTarefa(this)'><i class="bi bi-check-lg concluir"></i></button>`;
         listaTarefas.appendChild(novoElemento);
     }
     input1.value = "";

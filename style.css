@@ -33,6 +33,7 @@ i {
     border: 5px 5px;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 0px;
 }
 
 .text-input {
@@ -44,7 +45,8 @@ i {
     border-radius: 5px;
 }
 
-.teste{
+.list-tarefas{
+    margin-right: 36px;
     display: flex;
     color: black;
     flex-direction: column;
@@ -73,7 +75,7 @@ i {
     margin-right: 10px; 
 }
 
-.teste {
+.list-tarefas {
     color: black;
     flex-direction: column;
     width: 720px; 
@@ -81,7 +83,30 @@ i {
     padding: 0; 
 }
 
-.lixo{
+.apagar{
     display: flex;
     color: rgb(183, 39, 39);
+}
+
+.editar{
+    display: flex;
+    color: rgb(183, 39, 39);
+}
+
+.concluir{
+    display: flex;
+    color: rgb(183, 39, 39);
+}
+
+.list-tarefas :hover{
+    background-color: beige;
+}
+
+p{
+    text-align: center;
+    opacity: 0.4;
+}
+
+footer{
+    margin-top: 100px;
 }
